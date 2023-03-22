@@ -12,39 +12,42 @@ Our model will consist of a 2-layer neural network model with an input layer and
 Libraries required for running code:
 
 For data visualizations: 
-pip install association-metrics
-import association_metrics as am
-from scipy.stats import chi2_contingency
+> pip install association-metrics
+> import association_metrics as am
+> from scipy.stats import chi2_contingency
 
 For feature importance: 
-!pip install xgboost
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-import xgboost
-from xgboost import plot_importance
+> !pip install xgboost
+> from sklearn.compose import ColumnTransformer
+> from sklearn.preprocessing import OneHotEncoder
+> from sklearn.linear_model import LogisticRegression
+> from sklearn.preprocessing import LabelEncoder
+> from sklearn.model_selection import train_test_split
+> from sklearn.metrics import accuracy_score
+> import xgboost
+> from xgboost import plot_importance
 
 For CNN model:
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import classification_report,confusion_matrix
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense,Dropout
-from tensorflow.keras.models import load_model
+> from sklearn.model_selection import train_test_split
+> from sklearn.preprocessing import MinMaxScaler
+> from sklearn.metrics import classification_report,confusion_matrix
+> import tensorflow as tf
+> from tensorflow.keras.models import Sequential
+> from tensorflow.keras.layers import Dense,Dropout
+> from tensorflow.keras.models import load_model
 
 
 For the analyzing fairness portion:
-pip install aequitas
-from aequitas.group import Group
-from aequitas.bias import Bias
-from aequitas.fairness import Fairness
-from aequitas.plotting import Plot
+> pip install aequitas
+> from aequitas.group import Group
+> from aequitas.bias import Bias
+> from aequitas.fairness import Fairness
+> from aequitas.plotting import Plot
 
 For the mitigating bias portion:
-from collections import Counter
-from imblearn.over_sampling import SMOTE
-from sklearn.preprocessing import MinMaxScaler
+> from collections import Counter
+> from imblearn.over_sampling import SMOTE
+> from sklearn.preprocessing import MinMaxScaler
+
+Refection:
+
