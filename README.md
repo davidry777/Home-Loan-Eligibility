@@ -8,6 +8,8 @@ We will essentially analyze the Loan Eligible Dataset that shows who is eligible
 
 Our model will consist of a 2-layer neural network model with an input layer and output layer. We’ll first split the dataset into 80% training set and 20% testing set, and feed the training data into a Sequential model from TensorFlow. The Sequential model will start with 6 neurons on the input layer, and then 1 neuron in the output layer. All layers will be Dense layers, with the activation function set to “relu” for the input and hidden layers and “sigmoid” for the output layer. We’ll fit the model to the training data for at least 10 epochs and adjust from there based on results. We will also analyze the fairness of our model using various metrics, such as unsupervised fairness, supervised fairness, and overall fairness. These metrics are very useful for detecting biases in the model that are caused by different protected attributes.
 
+The chosen dataset is different compared to the one in our Project Status Report, due to the fact our previous dataset only had 4 attributes. Therefore, we went with the Loan Eligible Dataset which had 14 attributes in order to include additional complexity to our project.
+
 
 Libraries required for running code:
 
@@ -53,3 +55,4 @@ Final Conclusion: Before mitigating bias, we found that our model produces a 68%
 
 Changes we made after presentation: We added some more in-depth explanations throughout our notebook. We also added two plots for analyzing fairness (for "precision_disparity" metric for all attributes & for the metric "ppr"). We created a confusion matrix for the male_df and female_df dataframe and calculated their true positive, true negative, false positive, and false negative rates. From there, we were able to further analyze fairness by comparing the Equal Opportunity ratio, Predictive Parity Ratio, Predictive Equality Ratio, Accuracy Equality Ratio, and Statistical Parity Ratio between males and females. We also mitigated bias in our model using oversampling and normalization techniques. 
 
+For contributions, Aditi worked on cleaning the dataset and making visualizations to gain insights that are important to our project. David worked on utilizing the XGBoost Classifier to better understand which features are important towards predicting loan eligibility, as well as creating the CNN model to predict eligibility. Brenda and Iqra worked on analyzing fairness using the aequitas library and using SMOTE and MinMaxScaler in order to try mitigate bias.
