@@ -51,7 +51,7 @@ For the mitigating bias portion:
 > from imblearn.over_sampling import SMOTE
 > from sklearn.preprocessing import MinMaxScaler
 
-Final Conclusion: Before mitigating bias, we found that our model produces a 68% accuracy, and we can see that applying mitigating bias decreases our accuracy rate (about 64%) on the test data which occurs after balancing and scaling.
+Final Conclusion: Before mitigating bias, we found that our model produces a 68% accuracy, and we can see that applying mitigating bias decreases our accuracy rate (about 67%) on the test data which occurs after balancing and scaling.
 
 Changes we made after presentation: We added some more in-depth explanations throughout our notebook. We also added two plots for analyzing fairness (for "precision_disparity" metric for all attributes & for the metric "ppr"). We created a confusion matrix for the male_df and female_df dataframe and calculated their true positive, true negative, false positive, and false negative rates. From there, we were able to further analyze fairness by comparing the Equal Opportunity ratio, Predictive Parity Ratio, Predictive Equality Ratio, Accuracy Equality Ratio, and Statistical Parity Ratio between males and females. We also mitigated bias in our model using oversampling and normalization techniques. 
 
