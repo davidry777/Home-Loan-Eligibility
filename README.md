@@ -1,6 +1,3 @@
-# final-project-badi
-final-project-badi created by GitHub Classroom
-
 # Project Goal:
 We will create a CNN model for predicting whether a customer is eligible for a home loan or not using important features like ApplicantIncome, LoanAmount, CoapplicantIncome, Loan_Amount_Term, Credit_History. We will also clean the data, create visualizations, describe the importance of our features, and analyze fairness using Aequitas. 
 
